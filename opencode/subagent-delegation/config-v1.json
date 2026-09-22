@@ -1,0 +1,40 @@
+
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "explore": {
+      "description": "Bounded local codebase exploration. Find files, trace known execution paths, locate relevant tests, inspect straightforward logs and summarize evidence. Use when the search target and success criteria are clear, even if substantial reading is required. Do not use for investigations requiring competing hypotheses or complex judgment.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-luna",
+      "reasoningEffort": "high"
+    },
+    "scout": {
+      "description": "Bounded external documentation and dependency research. Find authoritative references, inspect upstream implementations and compare documented behavior with local code. Use when the research questions are reasonably clear. Return relevant findings and source references, not exhaustive search output.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-luna",
+      "reasoningEffort": "high"
+    },
+    "general": {
+      "description": "Multi-step investigations or independently scoped implementation requiring substantial judgment. Use for uncertain search paths, competing explanations, complex debugging, cross-source synthesis and work requiring decisions about what to investigate next. Can edit files and run tests within an assigned scope.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-sol",
+      "reasoningEffort": "high"
+    },
+    "deep-investigator": {
+      "description": "Exceptional investigations requiring unusually strong judgment. Use for substantial ambiguity, consequential or adversarial problems, unexpected contradictions, difficult architectural questions and independent verification of surprising findings. Read-only; use general when executing commands or making changes is required. Not for routine research or implementation.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-astra",
+      "reasoningEffort": "high",
+      "permission": {
+        "*": "deny",
+        "read": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "lsp": "allow",
+        "webfetch": "allow",
+        "websearch": "allow"
+      }
+    }
+  }
+}

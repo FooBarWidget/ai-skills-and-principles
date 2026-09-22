@@ -1,0 +1,132 @@
+
+{
+  // Schema is outdated
+  //"$schema": "https://opencode.ai/config.json",
+
+  "providers": {
+    "openai": {
+      "models": {
+        "gpt-6-luna": {
+          "variants": [
+            {
+              "id": "delegate-high",
+              "settings": {
+                "reasoningEffort": "high"
+              }
+            }
+          ]
+        },
+        "gpt-6-sol": {
+          "variants": [
+            {
+              "id": "delegate-high",
+              "settings": {
+                "reasoningEffort": "high"
+              }
+            }
+          ]
+        },
+        "gpt-6-astra": {
+          "variants": [
+            {
+              "id": "delegate-high",
+              "settings": {
+                "reasoningEffort": "high"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  "agents": {
+    "explore": {
+      "description": "Bounded local codebase exploration. Find files, trace known execution paths, locate relevant tests, inspect straightforward logs and summarize evidence. Use when the search target and success criteria are clear, even if substantial reading is required. Do not use for investigations requiring competing hypotheses or complex judgment.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-luna#delegate-high"
+    },
+
+    "scout": {
+      "description": "Bounded external documentation and dependency research. Find authoritative references, inspect upstream sources and compare documented behavior with local code. Use when research questions are reasonably clear. Return relevant findings and references rather than exhaustive search output. Escalate when cloning repositories or executing commands is required.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-luna#delegate-high",
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "read",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "glob",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "grep",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "webfetch",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "websearch",
+          "resource": "*",
+          "effect": "allow"
+        }
+      ]
+    },
+
+    "general": {
+      "description": "Multi-step investigations or independently scoped implementation requiring substantial judgment. Use for uncertain search paths, competing explanations, complex debugging, cross-source synthesis and work requiring decisions about what to investigate next. Can edit files and run tests within an assigned scope.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-sol#delegate-high"
+    },
+
+    "deep-investigator": {
+      "description": "Exceptional investigations requiring unusually strong judgment. Use for substantial ambiguity, consequential or adversarial problems, unexpected contradictions, difficult architectural questions and independent verification of surprising findings. Read-only; use general when executing commands or making changes is required. Not for routine research or implementation.",
+      "mode": "subagent",
+      "model": "openai/gpt-6-astra#delegate-high",
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "read",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "glob",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "grep",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "webfetch",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "websearch",
+          "resource": "*",
+          "effect": "allow"
+        }
+      ]
+    }
+  }
+}
