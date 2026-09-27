@@ -1,4 +1,4 @@
---
+---
 name: writing-prompts
 description: Guidelines for drafting AI prompts. Use when updating/reviewing AI prompts, including skill contents.
 ---
