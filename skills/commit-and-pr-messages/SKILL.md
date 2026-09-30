@@ -1,6 +1,6 @@
 ---
 name: commit-and-pr-messages
-description: Principles for writing effective version control commit messages and pull request messages, aimed at supporting human reviews. Use when writing commit and PR messages, or when reviewing them against principles.
+description: Use when writing or reviewing commit and PR messages, to help human reviewers understand and assess changes.
 ---
 
 ## Version control commit and pull request messages principles
@@ -13,8 +13,10 @@ Scale the explanation to the review burden. For large or conceptually broad diff
 
 Include non-obvious information that materially helps review, such as the prior problem or motivation, design decisions and rationale, research findings or constraints, tradeoffs, caveats, consequences, meaningful validation or rollout information, and areas deserving particular attention. Do not treat this as a checklist or invent significance to fill it.
 
-Avoid narrating the diff, list files or symbols, enumerate obvious edits, or adding generic claims and filler. Mention implementation details only when needed to explain a design choice or tradeoff. Avoid including a checklist of tests run.
+Avoid narrating the diff, enumerating obvious edits, and adding generic claims or filler. Mention implementation details, files, or symbols only when they materially help review; make their relevance clear.
 
-For titles, be concise, use a clear subject describing the actual change or outcome rather than a vague label such as "Fix X".
+Avoid standalone verification sections and test-run checklists. Integrate material validation findings or gaps into the relevant explanation.
+
+For titles, concisely name the specific change or outcome; avoid vague labels like "Misc fixes".
 
 For bodies, provide enough orientation and context to make review easier, but no more. Avoid rigid templates and unnecessary sections.
