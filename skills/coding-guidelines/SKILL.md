@@ -14,7 +14,8 @@ description: Use when writing code, or reviewing against guidelines
   - Shell scripts: use pipefail
   - When ignoring errors, only ignore specific errors, not blanket ignore all errors
 - Commenting strategy:
+  - Apply the documentation principles, treat as internal developer documentation.
   - Comment non-obvious context the code cannot express clearly: purpose, domain terms, responsibilities, input and output semantics, algorithm stages, invariants, caveats, and decisions. Explain complicated algorithms in high-level manner to aid human readability. Briefly state non-obvious class, module or method responsibilities. Put the comment where that information applies.
   - Write for a capable contributor new to the subsystem or platform. Use natural, plain English and precise technical terms where useful. Define unfamiliar concepts where introduced, explain how they relate to nearby code, and do not make readers derive their meaning from mechanics or call sites.
-  - State purpose or constraints before mechanics. Keep comments short and local, put broader or cross-cutting rationale/caveats in the developer handbook, and do not narrate straightforward code.
+  - State purpose or constraints before mechanics. Keep comments concise and local. Put broader or cross-cutting rationale/caveats in the developer handbook, retaining essential context locally and linking where useful. Avoid narrating straightforward code.
 - Before finishing a non-trivial change, do one final verification pass: re-read the request, inspect the full diff, run appropriate tests/checks, and look for missed requirements, wrong assumptions, guideline violations, relevant edge cases, regressions, or unnecessary changes. Fix concrete issues you find and repeat affected checks when needed. Preserve correct code; do not revise merely for the sake of revising.
