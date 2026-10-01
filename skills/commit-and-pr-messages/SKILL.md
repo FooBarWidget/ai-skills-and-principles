@@ -1,6 +1,8 @@
 ---
 name: commit-and-pr-messages
 description: Use when writing or reviewing commit and PR messages, to help human reviewers understand and assess changes.
+metadata:
+  dependencies: documentation-principles, escalation-policy
 ---
 
 ## Version control commit and pull request messages principles

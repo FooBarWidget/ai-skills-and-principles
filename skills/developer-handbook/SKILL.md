@@ -2,6 +2,8 @@
 name: developer-handbook
 description: |
   About the developer handbook: purpose, content, writing guidelines. Use when coding. Use when updating internal developer documentation, or reviewing it against guidelines.
+metadata:
+  dependencies: documentation-principles
 ---
 
 ## Developer handbook

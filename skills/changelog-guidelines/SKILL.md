@@ -1,6 +1,8 @@
 ---
 name: changelog-guidelines
 description: Guidelines for writing changelogs. Use when writing changelogs, or reviewing against guidelines.
+metadata:
+  dependencies: documentation-principles
 ---
 
 ## Changelog guidelines
