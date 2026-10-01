@@ -1,6 +1,8 @@
 ---
 name: documentation-principles
 description: Use when writing or reviewing documentation, including code comments
+metadata:
+  dependencies: escalation-policy
 ---
 
 ## Documentation principles
@@ -18,6 +20,7 @@ Audience, purpose, and information flow:
 - Use Diátaxis philosophy as guidance for reader needs: action vs understanding, learning vs application. Give each document or coherent group of sections a clear purpose; preserve it when revising. Distinguish different purposes through sections or transitions where useful.
 - Lead with the main point relevant to the reader's current question. Build from what readers already know; introduce unfamiliar concepts and technical detail when their relevance is clear.
 - Make relationships between ideas explicit. State the organizing idea before examples or cases, and connect shifts in purpose or scope. Keep the intended reader and references to people or things clear.
+- Infer intent and rationale when reasonably supported by context. Apply the escalation policy to unresolved gaps or uncertainty, considering confidence and consequences of being wrong.
 
 Document structure:
 
