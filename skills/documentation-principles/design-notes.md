@@ -1,4 +1,4 @@
-# Skill design notes
+# Skill design notes & rationale
 
 We include prose recommendations common in many technical writing guidelines, such as "use active voice". We also address common AI prose issues:
 
