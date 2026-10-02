@@ -16,7 +16,7 @@ metadata:
   - Shell scripts: use pipefail
   - When ignoring errors, only ignore specific errors, not blanket ignore all errors
 - Commenting strategy:
-  - Apply documentation principles for internal developers; assume reader may also be new to the subsystem or platform.
+  - Apply the documentation principles, treating comments as internal developer docs. Assume reader may also be new to the subsystem or platform.
   - Comment non-obvious context the code cannot express clearly: purpose, domain terms, responsibilities, input/output semantics, algorithm stages, invariants, caveats, decisions. Explain complicated algorithms at a high level to aid human understanding. Concisely state non-obvious class, module, or method responsibilities. Avoid narrating straightforward code.
   - Use precise technical terms where useful. Explain how introduced concepts relate to nearby code; do not make readers derive their meaning from mechanics or call sites.
   - Keep comments concise and place them where they apply. Put broader or cross-cutting rationale/caveats in the developer handbook, retaining essential context locally and linking where useful.
