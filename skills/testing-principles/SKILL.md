@@ -1,6 +1,6 @@
 ---
 name: testing-principles
-description: Use when coding, writing tests, or reviewing tests. Not applicable to shell scripts, Ansible.
+description: Use when writing/reviewing tests. Use when coding, to understand what tests to write. Not applicable to shell scripts, Ansible.
 metadata:
   dependencies: escalation-policy
 ---

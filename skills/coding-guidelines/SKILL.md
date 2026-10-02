@@ -1,6 +1,6 @@
 ---
 name: coding-guidelines
-description: Use when writing code, or reviewing against guidelines
+description: Use when writing code, or reviewing code (incl comments) against guidelines
 metadata:
   optional-dependencies: documentation-principles # when writing comments
 ---
