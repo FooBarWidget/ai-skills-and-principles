@@ -1,6 +1,6 @@
 ---
 name: documentation-principles
-description: Use when writing or reviewing documentation, including code comments
+description: Use when writing or reviewing documentation, code comments, version control commit messages and pull request messages
 metadata:
   dependencies: escalation-policy
 ---
