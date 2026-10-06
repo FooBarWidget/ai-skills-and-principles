@@ -19,3 +19,12 @@ Regarding "Infer intent and rationale when reasonably supported by context": whe
 Regarding descriptions of behavior: the AI may describe behavior exhaustively. This comes at the risk of obscuring the main point, drowning the user in edge case details. Depending on the situation, not all details are worth documenting explicitly.
 
 Regarding explanations of technical concepts: whether it deserves explanation depends on the reader's likely background. For example, a typical Ruby does not need explanations about Ruby language constructs, but may appreciate explanations about uncommon operating system-specific caveats.
+
+## Resources
+
+Inspiration and guidance was taken from these resources:
+
+- [Google Technical Writing: Organizing large documents](https://developers.google.com/tech-writing/two/large-docs)
+  - Useful guidance beyond prose style: Organize around reader tasks, introduce information when needed, disclose complexity progressively, and provide navigation to related material.
+- [Mark Baker: Every Page Is Page One: Bottom-Up Architecture Q and A: Organizing the Site](https://everypageispageone.com/2015/02/16/bottom-up-architecture-q-and-a-organizing-the-site/)
+  - Useful guidance beyond prose style: Readers can enter anywhere. Links can express several useful relationships between documents, without forcing everything into one hierarchy.

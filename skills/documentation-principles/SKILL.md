@@ -22,12 +22,15 @@ Audience, purpose, and information flow:
 - Make relationships between ideas explicit. State the organizing idea before examples or cases, and connect shifts in purpose or scope. Keep the intended reader and references to people or things clear.
 - Infer intent and rationale when reasonably supported by context. Apply the escalation policy to unresolved gaps or uncertainty, considering confidence and consequences of being wrong.
 
-Document structure:
+Document structure and navigation:
 
-- Organize around distinct reader needs. Reuse consistent patterns for comparable entries; avoid forcing every topic into matching sections like "What it is"/"Why it matters"/"How it works". Add a section only when separating distinct information helps readers navigate or understand it. Integrate brief explanations of purpose or rationale into relevant paragraphs.
+- Organize documents and sections around distinct reader needs. Choose categories and labels matching how readers seek tasks, concepts, or reference items.
+- Reuse consistent patterns for comparable entries; avoid forcing every topic into matching sections like "What it is"/"Why it matters"/"How it works". Add a section only when separating distinct information helps readers navigate or understand it. Integrate brief explanations of purpose or rationale into relevant paragraphs.
 - Use headings to mark meaningful changes in topic or purpose without fragmenting closely related material. Make each heading accurately describe the material beneath it.
 - Split at distinct purposes or major topics (subjects readers seek independently) only when separate documents materially improve understanding or navigation, or readers naturally expect them. Each resulting document should have enough substance and a clear standalone purpose; regroup small remnants with related material.
 - Merge short documents when they serve closely related reader needs and separation adds navigation overhead without useful independence. Preserve meaningful distinctions through sections.
+- Give shared explanations a primary home; make them discoverable from relevant indexes and related topics. Use descriptive links to prerequisites, deeper detail, or next steps where useful.
+- Support readers arriving directly at a page or section. Provide enough context to orient them; keep brief essential explanations local rather than forcing readers through links.
 - Use conclusions to synthesize long or complex documents, not merely repeat earlier content.
 
 Concision and revision:
