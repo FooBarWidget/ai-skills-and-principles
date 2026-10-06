@@ -36,7 +36,7 @@ Document structure and navigation:
 Concision and revision:
 
 - Be concise by removing repetition and unnecessary detail while preserving connections, qualifications, and distinctions needed for understanding. Split sentences or paragraphs when compression makes them dense.
-- Before finalizing, remove material that serves no useful reader purpose. Avoid repeating information already clear from an example or earlier section unless repetition helps readers navigate, connect ideas, or act.
+- Before finalizing, reload this skill to improve LLM recall performance, then review the output against these principles and fix concrete issues.
 
 For internal developer documentation:
 
