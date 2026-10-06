@@ -49,3 +49,7 @@ For user documentation:
 
 - Focus on public setup, usage, behavior, and limitations.
 - Include details needed for correct use or troubleshooting. Include edge cases only when likely reader needs or consequences of misunderstanding justify the detail; keep them from obscuring the main point. Omit internals unless they serve those needs.
+
+Model suitability:
+
+- Writing or substantially revising human-facing documentation requires strong editorial judgment. If runtime context explicitly identifies the model as GPT Luna, do not block documentation work, but prominently recommend rerunning the documentation writing/review with GPT Sol or another stronger model. Do not guess the current model.
