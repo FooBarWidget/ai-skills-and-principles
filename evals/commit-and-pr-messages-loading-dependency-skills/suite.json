@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/FooBarWidget/rspec-capturing-formatter.git",
+  "commits": [
+    "cb68e1a691f8cc7126a59e5453df5aa5709eff5d",
+    "3845b84711ca4a60948f1b78490d115174da304a"
+  ],
+  "repetitions": 20,
+  "timeout_seconds": 600
+}
