@@ -1,0 +1,1 @@
+Rewrite the given draft as an internal reference note titled "Repository access and pipeline authentication". Refer to the given context for fictional, authoritative facts. Return only the rewritten document.
